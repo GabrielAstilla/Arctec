@@ -148,8 +148,13 @@ function Augmentable() {
       </div>
 
       <About />
-      <div className="flex items-center justify-center mt-10">
-        <h1 className="text-lg font-bold text-white">ARCTEC 2024</h1>
+      <div className="flex flex-col items-center justify-center mt-10">
+        <h1 className=" bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+          ARCTEC 2024
+        </h1>
+        <h1 className=" bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+          Official Partner of Kabsu.me
+        </h1>
       </div>
 
       <ShootingStars />

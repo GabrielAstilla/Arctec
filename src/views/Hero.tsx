@@ -3,7 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import Image from "next/image";
-import heroImg from "/public/heroImg.png";
+import heroImg from "/public/heroImg.png"; // Desktop image
+import MobileImg from "/public/Mobile.png"; // Mobile image
 import { QrCode, Download } from "lucide-react";
 
 const Hero = () => {
@@ -20,7 +21,7 @@ const Hero = () => {
         className="relative flex flex-col gap-4 items-center justify-center px-4"
       >
         <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0">
-          <h1 className="text-3xl md:text-9xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+          <h1 className="text-6xl md:text-9xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-arctec/90 to-arctec bg-opacity-50">
               AR
             </span>
@@ -30,13 +31,26 @@ const Hero = () => {
             Augmented Reality for CvSU Ladislao N. Diwa Memorial Library
           </p>
           <div className="flex items-center justify-center pt-4 md:pt-6">
-            <Image
-              src={heroImg}
-              alt="ARCTEC"
-              width={1500}
-              height={1500}
-              className="w-full md:w-[90%] lg:w-[80%] xl:w-[70%] h-auto"
-            />
+            {/* Mobile View */}
+            <div className="block md:hidden">
+              <Image
+                src={MobileImg}
+                alt="ARCTEC Mobile"
+                width={800}
+                height={800}
+                className="w-3/4 h-auto mx-auto"
+              />
+            </div>
+            {/* Desktop View */}
+            <div className="hidden md:block">
+              <Image
+                src={heroImg}
+                alt="ARCTEC"
+                width={1500}
+                height={1500}
+                className="w-full md:w-[90%] lg:w-[80%] xl:w-[70%] h-auto items-center justify-center mx-auto"
+              />
+            </div>
           </div>
         </div>
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
