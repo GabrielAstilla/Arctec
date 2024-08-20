@@ -37,7 +37,7 @@ export const EvervaultCard = ({
   return (
     <div
       className={cn(
-        "p-0.5 bg-transparent flex items-center justify-center w-full h-auto md:w-96 relative overflow-hidden",
+        "p-0.5 bg-transparent flex items-center justify-center w-full h-auto relative overflow-hidden",
         className
       )}
       onMouseMove={onMouseMove}
@@ -48,16 +48,18 @@ export const EvervaultCard = ({
           mouseY={mouseY}
           randomString={randomString}
         />
-        <div className="relative z-10 flex flex-row items-center justify-center text-center p-4">
-          <div className="relative rounded-full overflow-hidden w-20 h-20 md:w-28 md:h-28">
+        <div className="relative p-4 z-10 flex flex-row items-center justify-start text-start">
+          <div className="relative rounded-full overflow-hidden shrink-0">
             <img
               src={image.src}
               alt={name}
-              className="w-full h-full object-cover"
+              className="w-28 h-28 object-cover"
             />
           </div>
           <div className="mt-4 text-white ml-5">
-            <h2 className="font-bold text-lg md:text-xl">{name}</h2>
+            <h2 className="font-bold text-lg md:text-xl text-[#4C956C]">
+              {name}
+            </h2>
             <p className="text-xs md:text-sm">{pos1}</p>
             {pos2 && <p className="text-xs md:text-sm">{pos2}</p>}
           </div>

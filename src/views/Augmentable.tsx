@@ -24,7 +24,7 @@ function Augmentable() {
   });
 
   return (
-    <div className="h-full rounded-md bg-neutral-900 flex flex-col items-center justify-center relative w-full p-6">
+    <div className="h-full rounded-md bg-neutral-900 flex flex-col items-center justify-center relative w-full p-10">
       {/* First section with animations */}
       <motion.div
         ref={firstSectionRef}
@@ -35,10 +35,10 @@ function Augmentable() {
         transition={{ duration: 0.8, ease: [0.4, 0.0, 0.2, 1] }}
         className="flex flex-col items-center justify-center"
       >
-        <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-t from-arctec/40 to-arctec bg-opacity-50 text-center">
+        <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-t from-arctec/40 to-arctec bg-opacity-50 text-center p-3">
           Augmentable books
         </h1>
-        <p className="text-center text-sm sm:text-base md:text-lg lg:text-xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mt-2 max-w-screen-lg">
+        <p className="text-center text-sm sm:text-base md:text-2x1 lg:text-xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mt-2 max-w-screen-lg">
           ARCTEC turns reading into a fun and interactive experience. Get ready
           to see your books in a whole new way. This feature makes your books
           come alive with cool animations combined with artificial intelligence.

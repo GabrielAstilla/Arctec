@@ -8,24 +8,24 @@ import James from "/public/james (2).png";
 
 export const aboutDev = [
   {
-    name: "Gabiel Astilla",
+    name: "Gabiel Luis Astilla",
     image: Gab,
     pos1: "UI/UX Designer",
     pos2: "3D Artist",
   },
   {
-    name: "Rod Cotines",
+    name: "Rod Clarence Cotines",
     image: Rod,
     pos1: "Main Developer",
     pos2: "Unity Developer",
   },
   {
-    name: "Scire Nuestro",
+    name: "Scire Hance Nuestro",
     image: Scire,
     pos1: "Project Researcher",
   },
   {
-    name: "James Lagda",
+    name: "James Irvin Lagda",
     image: James,
     pos1: "Project Researcher",
   },
@@ -33,11 +33,11 @@ export const aboutDev = [
 
 function About() {
   return (
-    <div className="flex items-center justify-between flex-col pt-6">
-      <h1 className="text-center bg-clip-text text-transparent bg-gradient-to-t from-arctec/60 to-arctec bg-opacity-20 text-3xl sm:text-4xl md:text-5xl font-bold">
+    <div className="flex items-center justify-between flex-col p-10">
+      <h1 className="text-center bg-clip-text text-transparent bg-gradient-to-t from-arctec/60 to-arctec bg-opacity-20 text-4xl sm:text-4xl md:text-5xl font-bold">
         Development Team
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-6 p-4 mt-4 max-w-screen-lg w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-4 max-w-screen-lg w-full">
         {aboutDev.map((dev, index) => (
           <EvervaultCard
             key={index}
