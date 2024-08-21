@@ -48,7 +48,7 @@ export const EvervaultCard = ({
           mouseY={mouseY}
           randomString={randomString}
         />
-        <div className="relative p-4 z-10 flex flex-row items-center justify-start text-start">
+        <div className="relative p-2 md:p-4 z-10 flex flex-row items-center justify-start text-start">
           <div className="relative rounded-full overflow-hidden shrink-0">
             <img
               src={image.src}

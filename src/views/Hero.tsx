@@ -18,7 +18,7 @@ const Hero = () => {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4"
+        className="relative flex flex-col items-center justify-center"
       >
         <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0">
           <h1 className="text-7xl md:text-9xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
@@ -30,7 +30,7 @@ const Hero = () => {
           <p className="text-center text-lg md:text-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 pt-2">
             Augmented Reality for CvSU Ladislao N. Diwa Memorial Library
           </p>
-          <div className="flex items-center justify-center pt-4 md:pt-6">
+          <div className="flex items-center justify-center md:pt-6">
             {/* Mobile View */}
             <div className="block md:hidden">
               <Image
@@ -38,7 +38,7 @@ const Hero = () => {
                 alt="ARCTEC Mobile"
                 width={800}
                 height={800}
-                className="w-full h-auto mx-auto"
+                className="w-auto h-auto mx-auto"
               />
             </div>
             {/* Desktop View */}
