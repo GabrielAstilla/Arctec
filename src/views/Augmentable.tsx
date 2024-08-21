@@ -24,7 +24,7 @@ function Augmentable() {
   });
 
   return (
-    <div className="h-full rounded-md bg-neutral-900 flex flex-col items-center justify-center relative w-full p-10">
+    <div className="h-full rounded-md bg-neutral-900 flex flex-col items-center justify-center relative w-full p-6">
       {/* First section with animations */}
       <motion.div
         ref={firstSectionRef}
@@ -43,7 +43,7 @@ function Augmentable() {
           to see your books in a whole new way. This feature makes your books
           come alive with cool animations combined with artificial intelligence.
         </p>
-        <div className="hidden sm:flex items-center justify-center mt-4">
+        <div className="sm:flex items-center justify-center mt-4">
           <Image
             src={augImg}
             alt="ARCTEC"
@@ -55,7 +55,7 @@ function Augmentable() {
       </motion.div>
 
       <div className="flex flex-col md:flex-row md:space-x-3 items-center justify-center mt-10">
-        <div className="hidden sm:block w-full sm:w-4/5 md:w-1/2">
+        <div className="sm:block w-full sm:w-4/5 md:w-1/2">
           <Image
             src={pagesImg}
             alt="ARCTEC"
@@ -92,8 +92,8 @@ function Augmentable() {
         </motion.h1>
       </div>
 
-      <div className="flex flex-col-reverse md:flex-row-reverse md:space-x-3 items-center justify-center mt-10">
-        <div className="hidden sm:block w-full sm:w-4/5 md:w-1/2">
+      <div className="flex flex-col md:flex-row-reverse md:space-x-3 items-center justify-center mt-10">
+        <div className="sm:block w-full sm:w-4/5 md:w-1/2">
           <Image
             src={andro}
             alt="ARCTEC"
