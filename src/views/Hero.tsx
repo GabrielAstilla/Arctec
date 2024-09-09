@@ -20,7 +20,7 @@ const Hero = () => {
         }}
         className="relative flex flex-col items-center justify-center"
       >
-        <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0">
+        <div className="p-5 max-w-7xl mx-auto relative z-10 w-full md:pt-0">
           <h1 className="text-7xl md:text-9xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-arctec/90 to-arctec bg-opacity-50">
               AR
@@ -38,7 +38,7 @@ const Hero = () => {
                 alt="ARCTEC Mobile"
                 width={800}
                 height={800}
-                className="w-auto h-auto mx-auto"
+                className="w-auto h-[510px]"
               />
             </div>
             {/* Desktop View */}
